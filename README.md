@@ -1,91 +1,81 @@
-Stochastic Processes & Derivative Pricing in Continuous Time
+# Stochastic Processes & Derivative Pricing in Continuous Time
 
-This repository contains two closely related projects in stochastic calculus and mathematical finance, implemented in Python. Together, they provide a coherent workflow from Brownian motion modeling to option pricing, Monte Carlo valuation, and dynamic hedging under the Black–Scholes framework.
+This repository contains two closely related projects in **stochastic calculus** and **mathematical finance**, implemented in Python. Together, they provide a coherent workflow from **Brownian motion modeling** to **option pricing, Monte Carlo valuation, and dynamic hedging** under the Black–Scholes framework.
 
-📁 Contents
-1️⃣ Brownian Motion & Geometric Brownian Motion
+---
 
-Notebook:
-Brownian_Motion_and_Geometric_Brownian_Motion.ipynb
+## 📁 Contents
+
+### 1️⃣ Brownian Motion & Geometric Brownian Motion  
+**Notebook:**  
+`Brownian_Motion_and_Geometric_Brownian_Motion.ipynb`
 
 This notebook simulates:
 
-Standard Brownian Motion (Wₜ) as a cumulative sum of Gaussian increments.
+- Standard **Brownian Motion (Wₜ)** constructed as a cumulative sum of Gaussian increments.
+- **Geometric Brownian Motion (GBM)** defined by  
+  \[
+  S_t = S_0 \exp\left((\mu - \tfrac{1}{2}\sigma^2)t + \sigma W_t\right),
+  \]
+  which is the classical model for asset prices in continuous time.
 
-Geometric Brownian Motion (GBM) defined by
-
-St=S0exp⁡((μ−12σ2)t+σWt),
-S
-t
-	​
-
-=S
-0
-	​
-
-exp((μ−
-2
-1
-	​
-
-σ
-2
-)t+σW
-t
-	​
-
-),
-
-which is the classical model for asset prices in continuous time.
-
-Key ideas illustrated
-
-Construction of Wiener increments
-
-Monte Carlo simulation of multiple sample paths
-
-Effect of drift and volatility on asset dynamics
-
-Positivity and exponential growth of GBM
+**Key ideas illustrated**
+- Construction of Wiener increments  
+- Monte Carlo simulation of multiple sample paths  
+- Effect of drift and volatility on asset dynamics  
+- Positivity and exponential growth of GBM  
 
 This notebook provides the stochastic foundation used in the second project.
 
-2️⃣ Quadratic Option Pricing, Monte Carlo, and Delta Hedging
+---
 
-Notebook:
-Quadratic_Option_Pricing_Monte_Carlo_and_Delta_Hedging.ipynb
+### 2️⃣ Quadratic Option Pricing, Monte Carlo, and Delta Hedging  
+**Notebook:**  
+`Quadratic_Option_Pricing_Monte_Carlo_and_Delta_Hedging.ipynb`
 
-This notebook studies a European quadratic option using three complementary approaches:
+This notebook studies a **European quadratic option** under the Black–Scholes model using three complementary approaches:
 
-(a) Closed-form pricing and sensitivities
+#### (a) Closed-form pricing and sensitivities
+- Analytical option price \( V(t,S) \)
+- Explicit computation of the delta
+- Comparison with a standard European call option
+- Visualization of payoff, price, profit, and delta functions
 
-Analytical price 
-V(t,S)
-V(t,S) derived under the Black–Scholes model
+#### (b) Monte Carlo valuation
+- Simulation of terminal stock prices under GBM
+- Monte Carlo estimation of the option price
+- Repeated simulations to illustrate convergence
+- Variance reduction as the number of samples increases
 
-Explicit computation of the delta
+#### (c) Dynamic replication and hedging error
+- Implementation of a self-financing delta-hedging strategy
+- Discrete-time portfolio rebalancing
+- Comparison between the replication portfolio and option price
+- Empirical distribution of hedging errors showing unbiased replication on average
 
-Comparison with a standard European call option
+---
 
-Visualization of payoff, price, profit, and delta surfaces
+## 🧠 Skills & Concepts Demonstrated
 
-(b) Monte Carlo valuation
+- Stochastic processes and Brownian motion  
+- Black–Scholes modeling  
+- Monte Carlo simulation and convergence analysis  
+- Option pricing and sensitivity analysis (Greeks)  
+- Dynamic delta hedging and replication error  
+- Numerical experiments and financial visualization  
 
-Simulation of terminal stock prices under GBM
+---
 
-Estimation of the option price via Monte Carlo
+## 🛠️ Technologies Used
 
-Repeated experiments to illustrate convergence
+- Python  
+- NumPy  
+- SciPy  
+- Matplotlib  
 
-Reduction of variance as the number of simulations increases
+---
 
-(c) Dynamic replication and hedging error
+## 👥 Authors
 
-Implementation of a self-financing delta-hedging strategy
-
-Discrete-time rebalancing of the replication portfolio
-
-Comparison of portfolio value and option price along sample paths
-
-Empirical distribution of hedging errors, showing unbiased replication on average
-
+**Kenny**  
+**Joseph**

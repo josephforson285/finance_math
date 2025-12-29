@@ -12,11 +12,9 @@ This repository contains two closely related projects in **stochastic calculus**
 
 This notebook simulates:
 
-- Standard **Brownian Motion (Wₜ)** constructed as a cumulative sum of Gaussian increments.
+- **Standard Brownian Motion (W_t)** constructed as a cumulative sum of Gaussian increments.
 - **Geometric Brownian Motion (GBM)** defined by  
-  \[
-  S_t = S_0 \exp\left((\mu - \tfrac{1}{2}\sigma^2)t + \sigma W_t\right),
-  \]
+  `S_t = S_0 * exp((mu - 0.5 * sigma^2) * t + sigma * W_t)`,  
   which is the classical model for asset prices in continuous time.
 
 **Key ideas illustrated**
@@ -36,7 +34,7 @@ This notebook provides the stochastic foundation used in the second project.
 This notebook studies a **European quadratic option** under the Black–Scholes model using three complementary approaches:
 
 #### (a) Closed-form pricing and sensitivities
-- Analytical option price \( V(t,S) \)
+- Analytical option price `V(t, S)`
 - Explicit computation of the delta
 - Comparison with a standard European call option
 - Visualization of payoff, price, profit, and delta functions

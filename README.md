@@ -14,7 +14,7 @@ This notebook simulates:
 
 - **Standard Brownian Motion (W_t)** constructed as a cumulative sum of Gaussian increments.
 - **Geometric Brownian Motion (GBM)** defined by  
-  `S_t = S_0 * exp((mu - 0.5 * sigma^2) * t + sigma * W_t)`,  
+  `$$S_t = S_0 * exp((mu - 0.5 * sigma^2) * t + sigma * W_t)$$`,  
   which is the classical model for asset prices in continuous time.
 
 **Key ideas illustrated**
